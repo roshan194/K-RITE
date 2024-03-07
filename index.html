@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>K-tibe --assesment--</title>
+    <link rel="stylesheet" href="index.css" />
+    <!-- css sheet with some utility classes to maitain clean code -->
+    <link rel="stylesheet" href="utility.css" /> 
+    <!-- fontawesome cdn to load icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="d-flex gap-10">
+    <!-- Left section -->
+    <section class="left">
+      <div class="left-nav d-flex align-center">
+        <span class="logo">
+          <img src="assets/ros.jpg" alt="logo" class="m5" />
+        </span>
+        <span class="names d-flex dir-col">
+          <span>INC</span>
+          <span>InnovateHub</span>
+        </span>
+        <span class="img">
+          <img src="assets/ros.jpg" alt="Roshan" />
+        </span>
+      </div>
+      <div class="leftmenu">
+        <span class="close-nav d-flex justify-center align-center"
+          ><i class="fa-solid fa-chevron-left"></i
+        ></span>
+        <span class="open-nav d-flex justify-center align-center d-none"
+          ><i class="fa-solid fa-chevron-right"></i
+        ></span>
+      </div>
+      <div class="teams d-flex dir-col">
+        <span class="design d-flex align-center">
+          <i class="fa-regular fa-pen-to-square"></i>
+          <p>Design Team</p>
+          <span class="teamcount"
+            ><i class="fa-solid fa-group-arrows-rotate"></i> + 1</span
+          >
+        </span>
+        <span class="marketing d-flex align-center">
+          <i class="fa-solid fa-bullseye"></i>
+          <p>Marketing Team</p>
+          <span class="teamcount"
+            ><i class="fa-solid fa-group-arrows-rotate"></i> + 2</span
+          >
+        </span>
+        <span class="development d-flex align-center">
+          <i class="fa-solid fa-code"></i>
+          <p>Devlopment Team</p>
+          <span class="teamcount"
+            ><i class="fa-solid fa-group-arrows-rotate"></i> + 3</span
+          >
+        </span>
+        <span class="create d-flex align-center">
+          <i class="fa-brands fa-creative-commons-share"></i>
+          <p>Create a forum</p>
+        </span>
+      </div>
+      <div class="folders">
+        <span class="folder-nav d-flex justify-space-bet "><span class="bold">FOLDERS</span> <span><i class="fa-solid fa-plus"></i></span></span>
+        <ul>
+          <li>
+            <i class="fa-regular fa-folder"></i><span class="detail">Products</span>
+            <span class="drop-icons">
+              <span class="list">
+                <span>Roadmap</span>
+                <span>Feedback</span>
+                <span>Performance</span>
+                <span>Team</span>
+                <span>Analytics</span>
+              </span>
+              <i class="fa-solid fa-chevron-down "></i
+            ><i class="fa-solid fa-chevron-up"></i></span>
+          </li>
+          <li>
+            <i class="fa-regular fa-folder"></i><span class="detail">Sales</span>
+            <span class="drop-icons">
+              <span class="list">
+                <span>Ideology</span>
+                <span>Sharpness</span>
+                <span>Market</span>
+                <span>Team</span>
+                <span>Analytics</span>
+              </span>
+              <i class="fa-solid fa-chevron-down"></i
+            ><i class="fa-solid fa-chevron-up"></i></span>
+          </li>
+          <li>
+            <i class="fa-regular fa-folder"></i><span class="detail">Design</span>
+            <span class="drop-icons">
+              <span class="list">
+                <span>User Interface</span>
+                <span>User Experience</span>
+                <span>Market</span>
+                <span>Team</span>
+                <span>E-commerce</span>
+              </span>
+              <i class="fa-solid fa-chevron-down"></i
+            ><i class="fa-solid fa-chevron-up"></i></span>
+          </li>
+          <li><i class="fa-regular fa-folder"></i><span class="detail">Office</span></li>
+          <li><i class="fa-regular fa-folder"></i><span class="detail">Legal</span></li>
+        </ul>
+      </div>
+      <div class="left-bottom p-5">
+        <span class="invite d-flex align-center"><i class="fa-solid fa-user-plus"></i><p>Invite teammates</p></span>
+        <span class="help d-flex align-center"><i class="fa-regular fa-circle-question"></i><p>Help and first steps</p></span>
+        <div class="billing d-flex"><input type="text" placeholder="7 days left for free trial"><button>Billing</button></div>
+      </div>
+    </section>
+    <!-- Right section -->
+    <section class="right">
+      <div class="right-nav brdr-btm d-flex justify-space-bet align-center">
+        <h3>Products</h3>
+        <div class="right-nav-accesories d-flex justify-space-bet">
+          <input type="text"  placeholder="search for..." id="search" name="search" onkeydown="searchdata()">
+          <i class="fa-regular fa-comments" onclick="alert('Comments Clicked')"></i>
+          <i class="fa-solid fa-gear" onclick="alert('Settings Clicked')"></i>
+        </div>
+      </div>
+      <div class="right-detail-nav d-flex justify-space-bet brdr-btm">
+        <ul class="d-flex  ul1 align-center w-50 justify-space-arr">
+          <li class="bold" onclick="alert('All brands Clicked')"> <i class="fa-solid fa-border-all"></i>All brands </li>
+          <li class="bold" onclick="alert('Desk Clicked')"> Desk</li>
+          <li class="bold" onclick="alert('Tags Clicked')">Tags</li>
+          <li onclick="alert('Sort Clicked')"> <i class="fa-solid fa-arrow-down-z-a"></i> Sort</li>
+          <li onclick="alert('Filter Clicked')"> <i class="fa-solid fa-filter"></i> Filter</li>
+        </ul>
+        <ul class="w-33 ul2 d-flex align-center justify-space-arr">
+          <li class="bold" onclick="alert('Meating Clicked')"> <i class="fa-regular fa-handshake"></i> Meating</li>
+          <li class="bold" onclick="alert('Import/Export Clicked')"> <i class="fa-solid fa-download"></i> Import / Export</li>
+        </ul>
+
+      </div>
+      <div id="table-data" >
+        
+        <div id="table">
+          <span id="brand" class="w-15">
+            <input type="checkbox">
+              Brand
+          </span>
+          <span id="desc" class="w-20 scroll">Description</span>
+          <span id="members" class="w-15 scroll">Members</span>
+          <span id="catagories" class="w-15 scroll">Categories</span>
+          <span id="tags" class="w-15 scroll">Tags</span>
+          <span id="meating" class="w-15 scroll">Next Meet</span>
+          <span id="add" class="w-5 scroll"><i class="fa-solid fa-plus"></i></span>
+        </div>
+        <div id="tabledata">
+          
+        </div>
+      </div>
+      <div class="right-bottom d-flex justify-space-arr align-center">
+        <span class="cross"><i class="fa-solid fa-square-check"></i> Selected </span>
+        <span> <i class="fa-solid fa-box-archive"></i> Archive</span>
+        <span> <i class="fa-solid fa-trash"></i> Delete</span>
+        <span>more <i class="fa-solid fa-caret-down"></i></span>
+        <span class="cross"><i class="fa-solid fa-xmark"></i></span>
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>

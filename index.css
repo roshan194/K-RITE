@@ -1,0 +1,447 @@
+/* google font for App */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", sans-serif;
+}
+body{
+    padding:20px;
+}
+/* css for sidebar */
+.left{
+    width:20%;
+    min-height:600px;
+    height:calc(100vh - 40px);
+    border : 1.5px solid rgba(0,0,0,0.08);
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.05);
+    background-color: rgb(240, 240, 240);
+    z-index: 5;
+}
+.logo img{
+    width:35px;
+    height:35px;
+    border-radius: 10px;
+    filter:invert(1);
+    border: 1px solid white;
+}
+/* hover on logo */
+.logo img:hover{
+    filter:invert(0);
+    scale:1.2;
+    cursor: pointer;
+}
+.left-nav{
+    position: relative;
+    border-bottom: 1px dotted rgba(0,0,0,0.08);
+}
+.img img{
+    width:35px;
+    height:35px;
+    border-radius: 50px;
+    position: absolute;
+    top:5px;
+    right:5px
+}
+.img img:hover{
+    scale:1.1;
+}
+.names span{
+    font-size: 15px;
+}
+.names span:nth-child(2){
+    font-weight: 900;
+}
+.names span:nth-child(1){
+    color:rgb(146, 143, 143)
+}
+.leftmenu{
+    position: absolute;
+    left:100%;
+    top:5px
+}
+.leftmenu span{
+    width:35px;
+    height:35px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: none;
+    background-color: rgb(240, 240, 240);
+
+}
+.teams{
+    font-size: 13px;
+}
+.teams > span{
+    border: 1px solid rgba(0,0,0,0.08);
+    margin : 0px 5px 0 5px;
+    height:22px;
+    padding: 5px;
+    position: relative;
+}
+.teams > span:nth-child(1){
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.teams > span:nth-child(4){
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.teams > span > span{
+    border: 2px solid rgba(0,0,0,0.08);
+    position: absolute;
+    top:2px;
+    right:9px;
+    padding:3px;
+    border-radius: 5px;
+}
+.teams > span > p{
+    position: absolute;
+    top:7px;
+    left: 26px;
+}
+.left div:nth-child(3) span:hover{
+    font-weight:700;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.08);
+    cursor: pointer;
+}
+.folders{
+    margin:5px
+}
+.folder-nav{
+    width: 100%;
+    height:24px;
+    font-weight: 500;
+    
+}
+ul li{
+    list-style: none;
+    position: relative;
+    height:23px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.08);
+    cursor: pointer;
+}
+.drop-icons > i:nth-child(3){
+    display: none;
+}
+.list{
+    /* display: flex; */
+    display:none;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: absolute;
+    top: 17px;
+  left: -188px;
+}
+/* list for dropdown */
+.list span{
+    width:150px;
+    height:20px;
+}
+ul li:hover{
+    font-weight: 700;
+}
+ul li .drop-icons{
+    position: absolute;
+    right:10px
+}
+ul li .detail{
+    position: absolute;
+    left:25px
+}
+.left-bottom{
+    position: absolute;
+    bottom:10px;
+    left: 5px;
+    width:calc(100% - 20px)
+}
+.left-bottom span:hover{
+    font-weight: 700;
+    cursor: pointer;
+}
+.left-bottom input{
+    width:77%;
+    height:22px;
+    border-radius: 5px;
+}
+.left-bottom button{
+    width:23%;
+    height:26px;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    border: none;
+
+}
+.left-bottom button:hover{
+    background-color: white;
+    color:black;
+    border : 1px solid black
+}
+/* Right section */
+.right{
+    width:80%;
+    min-height: 600px;
+    height:calc(100vh - 40px);
+    border : 1.5px solid rgba(0,0,0,0.08);
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.05);
+    position: relative;
+}
+.right-nav{
+    height:45px;
+    padding: 0 15px;
+}
+.right-nav h3:hover, .right-nav div i:hover{
+    scale:1.1
+}
+.right-nav-accesories{
+    width:230px
+}
+.right-nav-accesories i {
+    border:1px solid rgba(0,0,0,0.1);
+    padding :2px;
+    border-radius: 4px;
+}
+.right-nav-accesories input {
+    border:1px solid rgba(0,0,0,0.1);
+    border-radius: 4px;
+    padding-left:10px
+}
+.right-detail-nav{
+    height:45px;
+    font-size: 14px;
+
+}
+.right-detail-nav ul li{
+    list-style: none;
+    border:1px solid rgba(0,0,0,0.05);
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+
+}
+.right-detail-nav ul li:hover{
+    scale : 1.1
+
+}
+
+.w-50{
+    width:50%
+}
+.w-33{
+    width:33%
+}
+#table{
+    position: absolute;
+    top : 97px;
+    display: flex;
+    padding: 0 10px 0 10px;
+    width: calc(100% - 20px);
+    gap:0
+}
+#table > span {
+    font-weight: 700;
+    border: 1px solid rgba(0, 0, 0, 0.123);
+    padding:5px 0 5px 5px;
+}
+.row{
+    display: flex;
+    padding: 0 10px 0 10px;
+    width: calc(100% - 20px);
+    height:40px;
+    gap:0
+}
+.scroll{
+    overflow:hidden;
+}
+.scrolly{
+    overflow-y: scroll;
+}
+.scrollx-y{
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+#tabledata{
+    margin-top: 36px;
+}
+.row > span{
+    border: 1px solid rgba(0, 0, 0, 0.219);
+    padding:5px 0 5px 5px;
+}
+.row img{
+    width:30px;
+    height:30px;
+    border-radius: 4px;
+}
+.fixed, #brand{
+    width:150px
+}
+.right-bottom{
+    width:50%;
+    height:35px;
+    border: 1px solid rgba(0,0,0,0.05);
+    border-radius: 10px;
+    position: absolute;
+    bottom : 5px;
+    left:25%
+}
+.right-bottom span{
+    border : 1.5px solid rgba(0,0,0,0.05);
+    border-radius: 5px;
+    padding : 2px 8px
+}
+.right-bottom .cross{
+    border : 1.5px solid white
+}
+.width-fit{
+    overflow: hidden;
+}
+
+/* for responsive Sidebar and main screen  */
+/* for max width 1296px */
+@media screen and (max-width:1296px) {
+    .list{
+      left: -140px;
+    }
+}
+/* for max width 1028px */
+@media screen and (max-width:1080px) {
+    .list{
+      left: -110px;
+    }
+}
+/* for max width 978px */
+@media screen and (max-width:978px){
+    .left{
+        width:25%
+    }
+    #tabledata{
+        margin-top: 36px;
+    }
+    .right-bottom {
+        width: 70%;
+        position: absolute;
+        left: 15%;
+    }
+    .right-detail-nav {
+        height: 45px;
+        font-size: 12px;
+    }
+}
+/* for max width 856px */
+@media screen and (max-width:856px){
+    #table span{
+        font-size:14px
+    }
+    .w-33{
+        width:40%;
+        justify-content: right;
+    }
+    .w-50{
+        width:60%;
+
+    }#tabledata{
+        margin-top: 34px;
+    }
+}
+/* for max width 768px */
+@media screen and (max-width:768px){
+    .left{
+        width:208px;
+        position: absolute;
+        left:-208px
+    }
+    .right-nav h3{
+        margin-left: 15px;
+    }
+    .leftmenu .open-nav{
+        display: flex;
+    }
+    .right{
+        width:100%;
+    }
+    .row img{
+        width:25px;
+        height:25px;
+    }
+}
+/* for max width 600px */
+@media screen and (max-width:600px){
+    body{
+        padding:10px;
+    }
+    #table-data span{
+        font-size: 10px;
+    }
+    #tabledata{
+        margin-top: 30px;
+    }
+    .row img{
+        width:20px;
+        height:20px;
+        border-radius: 2.5px;
+    }
+    .fixed, #brand{
+        width:110px
+    }
+    #table-data input{
+        width:10px;
+        height:10px
+    }
+    .right-bottom {
+        width: 90%;
+        position: absolute;
+        left: 5%;
+    }
+    .right-detail-nav ul li{
+        padding: 0;
+    
+    }
+}
+/* for max width 480px */
+@media screen and (max-width:480px){
+    #table-data span{
+        font-size: 8px;
+    }
+    #tabledata{
+        margin-top: 26px;
+    }
+    .row img{
+        width:16px;
+        height:16px;
+    }
+    .right-bottom {
+        width: 95%;
+        position: absolute;
+        left: 2.5%;
+        font-size: 12px;
+    }
+    .right-detail-nav {
+        height: 45px;
+        font-size: 10px;
+    }
+}
+/* for max width 390px */
+@media screen and (max-width:390px){
+    #tabledata{
+        margin-top: 26px;
+    }
+}
+/* for max width 368px */
+@media screen and (max-width:368px){
+    #tabledata{
+        margin-top: 36px;
+    }
+}
+/* for max width 340px */
+@media screen and (max-width:340px){
+    #search{
+        width: 115px;
+    }
+}
+
